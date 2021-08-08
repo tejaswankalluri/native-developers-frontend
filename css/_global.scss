@@ -1,0 +1,146 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap"); // Questrial font
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,800;1,700&display=swap"); //mulish font
+@import "colors";
+@import "maxins";
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 200ms linear;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+img {
+  pointer-events: none;
+}
+// flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-se {
+    justify-content: space-evenly;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+  &-ai-bl {
+    align-items: baseline;
+  }
+}
+// hide Elements
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none !important;
+  }
+}
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none !important;
+  }
+}
+.container {
+  @include breakpoint-up(xlarge) {
+    max-width: 85rem;
+    margin: 0 auto;
+  }
+  @include breakpoint-down(large) {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  @include breakpoint-down(medium) {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+  @include breakpoint-down(small) {
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+}
+//h
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+@include breakpoint-down(medium) {
+}
+@include breakpoint-down(small) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+//margin and padding
+// Margins
+@include list-loop(".mt-", "margin-top");
+@include list-loop(".mr-", "margin-right");
+@include list-loop(".mb-", "margin-bottom");
+@include list-loop(".ml-", "margin-left");
+@include list-loop(".mx-", "margin");
+// Paddings
+@include list-loop(".pt-", "padding-top");
+@include list-loop(".pr-", "padding-right");
+@include list-loop(".pb-", "padding-bottom");
+@include list-loop(".pl-", "padding-left");
+@include list-loop(".px-", "padding");
+
+.btn {
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: $orange;
+  color: $white;
+}
+.btn-secondary {
+  background-color: $orange;
+  color: $white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: $font_color;
+  font-weight: 700;
+  margin-left: 2rem;
+  &::after {
+    content: "\A";
+    display: block;
+    height: 1rem;
+    width: 10rem;
+    border-bottom: 0.4rem solid $orange;
+    margin-top: -1.5rem;
+  }
+}
