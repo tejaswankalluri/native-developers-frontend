@@ -35,7 +35,7 @@ nav {
 
 .header {
   .container {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +74,10 @@ nav {
   }
 }
 .about-us {
-  background-image: clip;
+  background-image: url("../img/bg.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
   .container {
     .cards {
       display: flex;
@@ -84,6 +87,7 @@ nav {
         flex-direction: column;
         margin: 0 1rem;
         .card {
+          background-color: #fff;
           max-width: 20rem;
           min-height: 15rem;
           border-radius: 1rem;
@@ -119,6 +123,10 @@ nav {
 }
 
 .our-team {
+  background-image: url("../img/bg.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
   .container {
     .cards {
       display: flex;
@@ -161,6 +169,134 @@ nav {
       .row4 {
         justify-content: flex-start;
         margin-top: 3rem;
+      }
+    }
+  }
+}
+.blog {
+  .container {
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 25rem;
+        border-radius: 1rem;
+        height: 30rem;
+        padding: 2rem 3rem;
+        box-shadow: 0px 0px 10px 2px $box_shadow;
+        img {
+          width: 90%;
+          border-radius: 1rem;
+        }
+        h4 {
+          color: $font_color;
+        }
+        p {
+          color: $gray;
+        }
+        a {
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+.subscribe {
+  .container {
+    .text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .heading {
+        font-size: 3rem;
+        color: $font_color;
+        font-weight: 700;
+        margin-left: 2rem;
+      }
+      p {
+        color: $font_color;
+        line-height: 1.4rem;
+        font-size: 1.1rem;
+        opacity: 0.8;
+        font-weight: 600;
+      }
+    }
+    .submit {
+      display: flex;
+      justify-content: center;
+      input {
+        border: none;
+        outline: none;
+        color: $gray;
+        line-height: 1.4rem;
+        font-size: 1.1rem;
+        opacity: 0.8;
+        font-weight: 600;
+      }
+    }
+  }
+}
+footer {
+  background-color: $light_orange;
+  height: 30rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+    .content {
+      width: 30%;
+      .logo {
+        color: $font_color;
+      }
+      p {
+        color: $gray;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      i {
+        font-size: 1.5rem;
+        padding: 1rem;
+        border-radius: 5rem;
+        border: 2px solid $orange;
+        color: $font_color;
+      }
+      #fb {
+        padding: 1rem 1.3rem;
+      }
+    }
+    h4 {
+      color: $font_color;
+    }
+    .external-links {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      .about {
+        display: flex;
+        flex-direction: column;
+        a {
+          color: $gray;
+          font-weight: 600;
+        }
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        .address,
+        .email,
+        .phone {
+          display: flex;
+          color: $font_color;
+        }
+        p {
+          color: $gray;
+          font-weight: 600;
+        }
       }
     }
   }
