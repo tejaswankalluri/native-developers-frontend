@@ -608,6 +608,13 @@ h4 {
   margin-top: -1.5rem;
 }
 
+.heading {
+  font-size: 3rem;
+  color: #1a3641;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
 #next-button {
   width: 2rem;
 }
@@ -765,6 +772,14 @@ nav .nav-class button {
   width: 4rem;
 }
 
+.about-us .container .cards .row .card .card-title {
+  color: #1a3641;
+}
+
+.about-us .container .cards .row .card .card-body {
+  color: #8a8a8a;
+}
+
 .about-us .container .cards .row .card:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.12);
@@ -782,6 +797,43 @@ nav .nav-class button {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 12rem;
+}
+
+.industries .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.industries .container .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.12);
+}
+
+.industries .container .cards .card i {
+  color: #1a3641;
+  font-size: 2rem;
+}
+
+.industries .container .cards .card h3 {
+  font-size: 1.3rem;
+  color: #1a3641;
 }
 
 .our-team {
@@ -842,6 +894,7 @@ nav .nav-class button {
 .our-team .container .cards .row .card p {
   color: #8a8a8a;
   text-transform: capitalize;
+  font-weight: 600;
 }
 
 .our-team .container .cards .row .card img {
@@ -916,6 +969,12 @@ nav .nav-class button {
   margin-right: auto;
 }
 
+.subscribe .container {
+  background-image: url("../img/bg2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .subscribe .container .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,13 +986,6 @@ nav .nav-class button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.subscribe .container .text .heading {
-  font-size: 3rem;
-  color: #1a3641;
-  font-weight: 700;
-  margin-left: 2rem;
 }
 
 .subscribe .container .text p {
@@ -965,16 +1017,18 @@ nav .nav-class button {
 
 footer {
   background-color: #ffe4e0;
-  height: 30rem;
 }
 
 footer .container {
+  height: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3rem 0;
 }
 
@@ -1015,6 +1069,7 @@ footer .container .external-links {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 50%;
+  margin-top: auto;
 }
 
 footer .container .external-links .about {

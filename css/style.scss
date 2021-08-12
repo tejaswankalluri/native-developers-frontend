@@ -105,6 +105,12 @@ nav {
           .logo {
             width: 4rem;
           }
+          .card-title {
+            color: $font_color;
+          }
+          .card-body {
+            color: $gray;
+          }
         }
         .card:hover {
           cursor: pointer;
@@ -121,7 +127,31 @@ nav {
     }
   }
 }
-
+.industries {
+  .container {
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      .card {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border-radius: 0.5rem;
+        width: max-content;
+        height: max-content;
+        box-shadow: 0px 0px 25px 5px $box_shadow;
+        i {
+          color: $font_color;
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.3rem;
+          color: $font_color;
+        }
+      }
+    }
+  }
+}
 .our-team {
   background-image: url("../img/bg.svg");
   background-position: right;
@@ -153,6 +183,7 @@ nav {
           p {
             color: $gray;
             text-transform: capitalize;
+            font-weight: 600;
           }
           img {
             width: 10rem;
@@ -207,16 +238,14 @@ nav {
 }
 .subscribe {
   .container {
+    background-image: url("../img/bg2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     .text {
       display: flex;
       align-items: center;
       flex-direction: column;
-      .heading {
-        font-size: 3rem;
-        color: $font_color;
-        font-weight: 700;
-        margin-left: 2rem;
-      }
+
       p {
         color: $font_color;
         line-height: 1.4rem;
@@ -242,10 +271,11 @@ nav {
 }
 footer {
   background-color: $light_orange;
-  height: 30rem;
   .container {
+    height: 30rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     padding: 3rem 0;
     .content {
       width: 30%;
@@ -275,6 +305,7 @@ footer {
       display: flex;
       justify-content: space-around;
       width: 50%;
+      margin-top: auto;
       .about {
         display: flex;
         flex-direction: column;
